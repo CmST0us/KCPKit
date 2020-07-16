@@ -43,8 +43,8 @@
 }
 
 - (void)update {
-    CFAbsoluteTime currentTime = CFAbsoluteTimeGetCurrent();
-    ikcp_update(_kcp, (IUINT32) currentTime);
+    CFAbsoluteTime currentTime = CFAbsoluteTimeGetCurrent() * 1000;
+    ikcp_update(_kcp, (IUINT32)currentTime);
 }
 
 - (int)inputData:(NSData *)data {

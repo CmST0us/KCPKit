@@ -89,6 +89,12 @@
             [self.delegate socketDidConnect:self];
         }
     });
+    
+    NSError *error = nil;
+    [sock receiveOnce:&error];
+    if (error) {
+        [sock close];
+    }
 }
 
 - (void)udpSocket:(KCPGCDAsyncUdpSocket *)sock didNotConnect:(NSError *)error {
@@ -104,6 +110,12 @@
     dispatch_async(self.kcpWorkQueue, ^{
         [self.kcpObject inputData:data];
     });
+    
+    NSError *error = nil;
+    [sock receiveOnce:&error];
+    if (error) {
+        [sock close];
+    }
 }
 
 - (void)udpSocketDidClose:(KCPGCDAsyncUdpSocket *)sock withError:(NSError  * _Nullable)error {

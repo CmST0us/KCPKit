@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,8 @@
 		65922E0124C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 65922DFF24C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.m */; };
 		65922E0424C0A4940032FC90 /* KCPUDPSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 65922E0224C0A4940032FC90 /* KCPUDPSocket.h */; };
 		65922E0524C0A4940032FC90 /* KCPUDPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 65922E0324C0A4940032FC90 /* KCPUDPSocket.m */; };
+		65922E0D24C0AE000032FC90 /* KCPUDPSocketTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 65922E0C24C0AE000032FC90 /* KCPUDPSocketTestCase.m */; };
+		65922E0F24C0AE000032FC90 /* KCPKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FF298824BF5E7500F40593 /* KCPKit.framework */; platformFilter = ios; };
 		65FF298D24BF5E7500F40593 /* KCPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 65FF298B24BF5E7500F40593 /* KCPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65FF299624BF5FDB00F40593 /* ikcp.h in Headers */ = {isa = PBXBuildFile; fileRef = 65FF299424BF5FDB00F40593 /* ikcp.h */; };
 		65FF299724BF5FDB00F40593 /* ikcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 65FF299524BF5FDB00F40593 /* ikcp.c */; };
@@ -18,11 +20,24 @@
 		65FF299C24BF611C00F40593 /* KCPObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 65FF299A24BF611C00F40593 /* KCPObject.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		65922E1024C0AE000032FC90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65FF297F24BF5E7500F40593 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65FF298724BF5E7500F40593;
+			remoteInfo = KCPKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		65922DFE24C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCPGCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		65922DFF24C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCPGCDAsyncUdpSocket.m; sourceTree = "<group>"; };
 		65922E0224C0A4940032FC90 /* KCPUDPSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCPUDPSocket.h; sourceTree = "<group>"; };
 		65922E0324C0A4940032FC90 /* KCPUDPSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCPUDPSocket.m; sourceTree = "<group>"; };
+		65922E0A24C0AE000032FC90 /* KCPUDPSocketTestCase.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KCPUDPSocketTestCase.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65922E0C24C0AE000032FC90 /* KCPUDPSocketTestCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCPUDPSocketTestCase.m; sourceTree = "<group>"; };
+		65922E0E24C0AE000032FC90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65FF298824BF5E7500F40593 /* KCPKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KCPKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FF298B24BF5E7500F40593 /* KCPKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCPKit.h; sourceTree = "<group>"; };
 		65FF298C24BF5E7500F40593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -33,6 +48,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		65922E0724C0AE000032FC90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65922E0F24C0AE000032FC90 /* KCPKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65FF298524BF5E7500F40593 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +66,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65922E0B24C0AE000032FC90 /* KCPUDPSocketTestCase */ = {
+			isa = PBXGroup;
+			children = (
+				65922E0C24C0AE000032FC90 /* KCPUDPSocketTestCase.m */,
+				65922E0E24C0AE000032FC90 /* Info.plist */,
+			);
+			path = KCPUDPSocketTestCase;
+			sourceTree = "<group>";
+		};
 		65FF297E24BF5E7500F40593 = {
 			isa = PBXGroup;
 			children = (
 				65FF298A24BF5E7500F40593 /* KCPKit */,
+				65922E0B24C0AE000032FC90 /* KCPUDPSocketTestCase */,
 				65FF298924BF5E7500F40593 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				65FF298824BF5E7500F40593 /* KCPKit.framework */,
+				65922E0A24C0AE000032FC90 /* KCPUDPSocketTestCase.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +144,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		65922E0924C0AE000032FC90 /* KCPUDPSocketTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65922E1224C0AE000032FC90 /* Build configuration list for PBXNativeTarget "KCPUDPSocketTestCase" */;
+			buildPhases = (
+				65922E0624C0AE000032FC90 /* Sources */,
+				65922E0724C0AE000032FC90 /* Frameworks */,
+				65922E0824C0AE000032FC90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65922E1124C0AE000032FC90 /* PBXTargetDependency */,
+			);
+			name = KCPUDPSocketTestCase;
+			productName = KCPUDPSocketTestCase;
+			productReference = 65922E0A24C0AE000032FC90 /* KCPUDPSocketTestCase.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		65FF298724BF5E7500F40593 /* KCPKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65FF299024BF5E7500F40593 /* Build configuration list for PBXNativeTarget "KCPKit" */;
@@ -137,6 +189,9 @@
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = eric3u;
 				TargetAttributes = {
+					65922E0924C0AE000032FC90 = {
+						CreatedOnToolsVersion = 11.5;
+					};
 					65FF298724BF5E7500F40593 = {
 						CreatedOnToolsVersion = 11.5;
 					};
@@ -156,11 +211,19 @@
 			projectRoot = "";
 			targets = (
 				65FF298724BF5E7500F40593 /* KCPKit */,
+				65922E0924C0AE000032FC90 /* KCPUDPSocketTestCase */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		65922E0824C0AE000032FC90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65FF298624BF5E7500F40593 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,6 +234,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		65922E0624C0AE000032FC90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65922E0D24C0AE000032FC90 /* KCPUDPSocketTestCase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65FF298424BF5E7500F40593 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,7 +255,50 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		65922E1124C0AE000032FC90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 65FF298724BF5E7500F40593 /* KCPKit */;
+			targetProxy = 65922E1024C0AE000032FC90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		65922E1324C0AE000032FC90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VQ94C2355;
+				INFOPLIST_FILE = KCPUDPSocketTestCase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric3u.KCPUDPSocketTestCase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65922E1424C0AE000032FC90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2VQ94C2355;
+				INFOPLIST_FILE = KCPUDPSocketTestCase/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eric3u.KCPUDPSocketTestCase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		65FF298E24BF5E7500F40593 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,6 +470,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		65922E1224C0AE000032FC90 /* Build configuration list for PBXNativeTarget "KCPUDPSocketTestCase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65922E1324C0AE000032FC90 /* Debug */,
+				65922E1424C0AE000032FC90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		65FF298224BF5E7500F40593 /* Build configuration list for PBXProject "KCPKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
