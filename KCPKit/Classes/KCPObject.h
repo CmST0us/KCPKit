@@ -10,10 +10,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef int(^KCPObjectOutputDataHandle)(NSData *data);
+
 @interface KCPObject : NSObject
 /// Create KCPObject with session ID
 /// @param sessionID data link id. Need the same session ID, that can be received.
-- (instancetype)initWithSessionID:(NSUInteger)sessionID;
+/// @param outputDataHandle data handle to send kcp data.
+- (instancetype)initWithSessionID:(NSUInteger)sessionID
+                 outputDataHandle:(KCPObjectOutputDataHandle)outputDataHandle;
+
+- (void)update;
+- (int)inputData:(NSData *)data;
+
+- (int)sendData:(NSData *)data;
+- (nullable NSData *)recvData;
+
 @end
 
 NS_ASSUME_NONNULL_END

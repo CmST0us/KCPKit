@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65922E0024C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 65922DFE24C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.h */; };
+		65922E0124C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 65922DFF24C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.m */; };
+		65922E0424C0A4940032FC90 /* KCPUDPSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 65922E0224C0A4940032FC90 /* KCPUDPSocket.h */; };
+		65922E0524C0A4940032FC90 /* KCPUDPSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 65922E0324C0A4940032FC90 /* KCPUDPSocket.m */; };
 		65FF298D24BF5E7500F40593 /* KCPKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 65FF298B24BF5E7500F40593 /* KCPKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65FF299624BF5FDB00F40593 /* ikcp.h in Headers */ = {isa = PBXBuildFile; fileRef = 65FF299424BF5FDB00F40593 /* ikcp.h */; };
 		65FF299724BF5FDB00F40593 /* ikcp.c in Sources */ = {isa = PBXBuildFile; fileRef = 65FF299524BF5FDB00F40593 /* ikcp.c */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65922DFE24C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KCPGCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		65922DFF24C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KCPGCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		65922E0224C0A4940032FC90 /* KCPUDPSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCPUDPSocket.h; sourceTree = "<group>"; };
+		65922E0324C0A4940032FC90 /* KCPUDPSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KCPUDPSocket.m; sourceTree = "<group>"; };
 		65FF298824BF5E7500F40593 /* KCPKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KCPKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		65FF298B24BF5E7500F40593 /* KCPKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KCPKit.h; sourceTree = "<group>"; };
 		65FF298C24BF5E7500F40593 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,8 +82,12 @@
 		65FF299824BF60EE00F40593 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				65922DFE24C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.h */,
+				65922DFF24C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.m */,
 				65FF299924BF611C00F40593 /* KCPObject.h */,
 				65FF299A24BF611C00F40593 /* KCPObject.m */,
+				65922E0224C0A4940032FC90 /* KCPUDPSocket.h */,
+				65922E0324C0A4940032FC90 /* KCPUDPSocket.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -90,6 +102,8 @@
 				65FF298D24BF5E7500F40593 /* KCPKit.h in Headers */,
 				65FF299B24BF611C00F40593 /* KCPObject.h in Headers */,
 				65FF299624BF5FDB00F40593 /* ikcp.h in Headers */,
+				65922E0424C0A4940032FC90 /* KCPUDPSocket.h in Headers */,
+				65922E0024C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				65FF299724BF5FDB00F40593 /* ikcp.c in Sources */,
+				65922E0524C0A4940032FC90 /* KCPUDPSocket.m in Sources */,
+				65922E0124C0A3A60032FC90 /* KCPGCDAsyncUdpSocket.m in Sources */,
 				65FF299C24BF611C00F40593 /* KCPObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
